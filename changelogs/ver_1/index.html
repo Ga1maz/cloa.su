@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://anticheat.ac/static/assets/img/ocean.png">
+    <title>Changelog - 6.0</title>
+    
+    
+    <style type="text/css">@font-face {font-family:Inter;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.0.16/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.0.16/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/inter/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:normal;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/vietnamese/wght/italic.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic/wght/italic.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/latin-ext/wght/italic.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/cyrillic-ext/wght/italic.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Montserrat;font-style:italic;font-weight:100 900;src:url(/cf-fonts/v/montserrat/5.0.16/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+    <link rel="stylesheet" href="index_files/ver_6.zYvRXd69.css">
+    <style>
+      * {
+        font-family: Montserrat, sans-serif;
+        scroll-behavior: smooth;
+      }
+      .markdown-styles h1 {
+        color: rgb(245 245 245 / var(--tw-text-opacity));
+        font-weight: 500;
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .markdown-styles h2 {
+        color: rgb(245 245 245 / var(--tw-text-opacity));
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-bottom: 1rem;
+      }
+      .markdown-styles blockquote p {
+        color: #8a8a8a;
+        font-weight: 500;
+        font-size: 12px;
+        padding-left: 1.5em;
+        border-left: 5px solid rgba(175, 175, 175, 0.1);
+        margin-bottom: 1rem;
+      }
+      .markdown-styles img {
+        width: 100%;
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid rgb(37, 37, 37);
+      }
+      .markdown-styles p {
+        margin-bottom: 2.75rem;
+      }
+      .markdown-styles a {
+        color: #5479df;
+      }
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+    </style>
+    <script type="module" src="index_files/hoisted.v8qm6jHO.js"></script>
+  </head>
+  <body class="bg-black">
+    <header class="sticky top-6 z-[100]">
+      <div class="w-full container bordergr mx-auto flex mt-6 backdrop-blur-lg font-medium rounded-xl border border-neutral-800 items-center text-neutral-300 justify-between py-5 px-10" style="
+          background: linear-gradient(
+            137deg,
+            rgba(10, 10, 10, 0.75) 4.87%,
+            rgba(2, 2, 2, 0.9) 75.88%
+          );
+        ">
+        <svg class="w-32 cursor-pointer" onclick="location.href='/'" viewBox="0 0 1728 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_67_2)">
+            <path d="M15.5341 189.938C15.5341 157.615 19.9138 127.877 28.6733 100.722C37.5204 73.5679 51.5355 48.2969 70.7188 24.9091H141.67C134.488 33.581 127.787 44.1361 121.567 56.5746C115.436 68.9254 110.093 82.4588 105.538 97.1747C101.07 111.891 97.5665 127.176 95.0263 143.031C92.486 158.798 91.2159 174.433 91.2159 189.938C91.2159 210.61 93.4058 231.457 97.7855 252.48C102.165 273.415 108.165 292.817 115.786 310.687C123.407 328.644 132.035 343.403 141.67 354.966H70.7188C51.5355 331.578 37.5204 306.307 28.6733 279.153C19.9138 251.998 15.5341 222.26 15.5341 189.938ZM201.408 176.273L205.612 130.023L167.246 156.827L146.223 120.037L188.269 100.591L146.223 81.1449L167.246 44.3551L205.612 71.1591L201.408 24.9091H243.453L239.249 71.1591L277.615 44.3551L298.638 81.1449L256.593 100.591L298.638 120.037L277.615 156.827L239.249 130.023L243.453 176.273H201.408ZM524.061 216.216L328.549 294.526V228.304L453.109 185.207L451.007 188.361V181.003L453.109 184.156L328.549 141.06V74.8381L524.061 153.148V216.216Z" fill="white"></path>
+            <path d="M962.693 187.273C962.693 211.565 958.143 232.371 949.043 249.691C940.016 266.938 927.686 280.148 912.054 289.322C896.495 298.496 878.845 303.082 859.103 303.082C839.361 303.082 821.674 298.496 806.042 289.322C790.483 280.075 778.154 266.828 769.053 249.581C760.026 232.261 755.513 211.491 755.513 187.273C755.513 162.981 760.026 142.211 769.053 124.964C778.154 107.644 790.483 94.3975 806.042 85.2237C821.674 76.0499 839.361 71.4631 859.103 71.4631C878.845 71.4631 896.495 76.0499 912.054 85.2237C927.686 94.3975 940.016 107.644 949.043 124.964C958.143 142.211 962.693 162.981 962.693 187.273ZM921.631 187.273C921.631 170.173 918.953 155.752 913.595 144.009C908.311 132.193 900.972 123.277 891.578 117.259C882.184 111.167 871.359 108.121 859.103 108.121C846.847 108.121 836.022 111.167 826.628 117.259C817.234 123.277 809.858 132.193 804.501 144.009C799.217 155.752 796.575 170.173 796.575 187.273C796.575 204.373 799.217 218.83 804.501 230.646C809.858 242.389 817.234 251.306 826.628 257.397C836.022 263.415 846.847 266.424 859.103 266.424C871.359 266.424 882.184 263.415 891.578 257.397C900.972 251.306 908.311 242.389 913.595 230.646C918.953 218.83 921.631 204.373 921.631 187.273ZM1073.3 303.303C1056.42 303.303 1041.93 299.596 1029.82 292.184C1017.78 284.772 1008.5 274.534 1001.97 261.47C995.508 248.333 992.279 233.215 992.279 216.115C992.279 198.942 995.581 183.787 1002.19 170.65C1008.79 157.44 1018.11 147.165 1030.15 139.826C1042.26 132.414 1056.57 128.707 1073.08 128.707C1086.81 128.707 1098.95 131.239 1109.52 136.303C1120.16 141.294 1128.64 148.376 1134.95 157.55C1141.26 166.65 1144.86 177.292 1145.74 189.474H1107.65C1106.11 181.328 1102.44 174.54 1096.64 169.109C1090.91 163.604 1083.25 160.852 1073.63 160.852C1065.49 160.852 1058.33 163.054 1052.16 167.457C1046 171.787 1041.19 178.026 1037.74 186.172C1034.37 194.318 1032.68 204.079 1032.68 215.455C1032.68 226.977 1034.37 236.884 1037.74 245.178C1041.12 253.397 1045.85 259.745 1051.94 264.222C1058.11 268.626 1065.34 270.827 1073.63 270.827C1079.5 270.827 1084.75 269.727 1089.37 267.525C1094.07 265.25 1098 261.984 1101.15 257.727C1104.31 253.471 1106.47 248.297 1107.65 242.205H1145.74C1144.78 254.168 1141.26 264.773 1135.17 274.02C1129.08 283.194 1120.78 290.386 1110.29 295.597C1099.8 300.734 1087.47 303.303 1073.3 303.303ZM1253.32 303.303C1236.37 303.303 1221.72 299.78 1209.39 292.734C1197.14 285.616 1187.71 275.561 1181.1 262.571C1174.5 249.508 1171.19 234.132 1171.19 216.445C1171.19 199.052 1174.5 183.787 1181.1 170.65C1187.78 157.44 1197.1 147.165 1209.06 139.826C1221.03 132.414 1235.08 128.707 1251.23 128.707C1261.65 128.707 1271.48 130.395 1280.73 133.771C1290.05 137.074 1298.27 142.211 1305.39 149.183C1312.58 156.155 1318.23 165.036 1322.34 175.824C1326.45 186.539 1328.51 199.309 1328.51 214.134V226.353H1189.91V199.492H1290.31C1290.23 191.86 1288.58 185.071 1285.35 179.126C1282.12 173.108 1277.61 168.375 1271.81 164.925C1266.09 161.476 1259.41 159.751 1251.78 159.751C1243.63 159.751 1236.48 161.733 1230.31 165.696C1224.15 169.586 1219.34 174.723 1215.89 181.108C1212.51 187.42 1210.79 194.355 1210.72 201.914V225.362C1210.72 235.196 1212.51 243.636 1216.11 250.682C1219.71 257.654 1224.73 263.011 1231.19 266.754C1237.65 270.424 1245.21 272.259 1253.87 272.259C1259.67 272.259 1264.91 271.451 1269.61 269.837C1274.31 268.149 1278.38 265.69 1281.83 262.461C1285.28 259.232 1287.88 255.232 1289.65 250.462L1326.86 254.645C1324.51 264.479 1320.03 273.066 1313.42 280.405C1306.89 287.67 1298.53 293.321 1288.33 297.358C1278.12 301.321 1266.46 303.303 1253.32 303.303ZM1410.88 303.413C1400.16 303.413 1390.51 301.504 1381.93 297.688C1373.41 293.799 1366.66 288.074 1361.67 280.515C1356.75 272.956 1354.29 263.635 1354.29 252.553C1354.29 243.013 1356.06 235.123 1359.58 228.885C1363.1 222.647 1367.91 217.656 1374 213.913C1380.09 210.17 1386.95 207.345 1394.59 205.437C1402.29 203.455 1410.25 202.024 1418.47 201.143C1428.38 200.116 1436.42 199.199 1442.58 198.391C1448.75 197.511 1453.22 196.19 1456.01 194.428C1458.87 192.594 1460.31 189.768 1460.31 185.952V185.291C1460.31 176.998 1457.85 170.576 1452.93 166.026C1448.01 161.476 1440.93 159.201 1431.68 159.201C1421.92 159.201 1414.18 161.329 1408.46 165.586C1402.8 169.843 1398.99 174.87 1397.01 180.668L1359.8 175.384C1362.73 165.109 1367.58 156.522 1374.33 149.624C1381.08 142.652 1389.34 137.441 1399.1 133.991C1408.86 130.469 1419.65 128.707 1431.46 128.707C1439.61 128.707 1447.72 129.661 1455.79 131.57C1463.87 133.478 1471.24 136.634 1477.92 141.037C1484.6 145.367 1489.96 151.275 1493.99 158.761C1498.1 166.246 1500.16 175.604 1500.16 186.832V300H1461.85V276.772H1460.53C1458.1 281.469 1454.69 285.872 1450.29 289.982C1445.96 294.019 1440.49 297.285 1433.89 299.78C1427.35 302.202 1419.68 303.413 1410.88 303.413ZM1421.23 274.13C1429.23 274.13 1436.16 272.552 1442.03 269.396C1447.9 266.167 1452.42 261.911 1455.57 256.626C1458.8 251.342 1460.42 245.581 1460.42 239.343V219.418C1459.17 220.445 1457.04 221.399 1454.03 222.28C1451.1 223.161 1447.79 223.931 1444.12 224.592C1440.45 225.252 1436.82 225.839 1433.22 226.353C1429.63 226.867 1426.51 227.307 1423.87 227.674C1417.92 228.481 1412.6 229.802 1407.91 231.637C1403.21 233.472 1399.5 236.04 1396.79 239.343C1394.07 242.572 1392.71 246.755 1392.71 251.893C1392.71 259.232 1395.39 264.773 1400.75 268.516C1406.11 272.259 1412.93 274.13 1421.23 274.13ZM1580.08 200.923V300H1540.23V130.909H1578.32V159.641H1580.3C1584.19 150.174 1590.39 142.652 1598.9 137.074C1607.49 131.496 1618.09 128.707 1630.72 128.707C1642.39 128.707 1652.55 131.203 1661.21 136.193C1669.94 141.184 1676.7 148.413 1681.47 157.88C1686.31 167.347 1688.7 178.833 1688.62 192.337V300H1648.77V198.501C1648.77 187.199 1645.84 178.356 1639.97 171.971C1634.17 165.586 1626.13 162.393 1615.86 162.393C1608.88 162.393 1602.68 163.935 1597.25 167.017C1591.89 170.026 1587.67 174.393 1584.59 180.117C1581.58 185.842 1580.08 192.777 1580.08 200.923Z" fill="#DCDCDC"></path>
+          </g>
+          <defs>
+            <clipPath id="clip0_67_2">
+              <rect width="1728" height="370" fill="white"></rect>
+            </clipPath>
+          </defs>
+        </svg>
+        <nav class="items-center gap-8 text-sm hidden lg:flex">
+          <!-- <a class="text-white" href="#home" 
+        >Home</a
+      >
+      <a
+        
+        class="text-neutral-400 hover:text-white transitions-all duration-300"
+        href="#features"
+        >Features</a
+      >
+      <a
+        class="text-neutral-400 hover:text-white transitions-all duration-300"
+        href="https://buy.anticheat.ac/"
+        >Pricing</a
+      >
+      <a
+        class="text-neutral-400 hover:text-white transitions-all duration-300"
+        href="#faq"
+        >Faq</a
+      >
+
+      <a
+      class="text-neutral-400 hover:text-white transitions-all duration-300"
+      href="https://dl.anticheat.ac"
+      >Download</a
+    > -->
+          <a class="text-neutral-400 hover:text-white transitions-all duration-300" href="https://anticheat.ac/">Home</a><a class="text-neutral-400 hover:text-white transitions-all duration-300" href="https://anticheat.ac/#features">Features</a><a class="text-neutral-400 hover:text-white transitions-all duration-300" href="https://buy.anticheat.ac/">Pricing</a><a class="text-neutral-400 hover:text-white transitions-all duration-300" href="https://anticheat.ac/#faq">Faq</a><a class="text-neutral-400 hover:text-white transitions-all duration-300" href="https://anticheat.ac/privacy">Privacy</a><a class="text-neutral-400 hover:text-white transitions-all duration-300" href="https://anticheat.ac/changelogs">Changelogs</a><a class="text-neutral-400 hover:text-white transitions-all duration-300" href="https://dl.anticheat.ac/">Download</a>
+        </nav>
+        <section class="flex items-center ml-auto lg:ml-0 gap-2 text-white">
+          <button onclick="location.href='https://anticheat.ac/dashboard'" class="group relative inline-flex h-9 items-center text-sm justify-center overflow-hidden rounded-lg bg-neutral-200 px-2 font-semibold text-neutral-700">
+            <svg class="h-5 w-5 fill-black" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M2.168,10.555a1,1,0,0,1,.278-1.387l9-6a1,1,0,0,1,1.11,0l9,6A1,1,0,0,1,21,11H19v9a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V11H3l.019-.019A.981.981,0,0,1,2.168,10.555Z"></path>
+              </g>
+            </svg>
+            <span class="ml-1.5"> Dashboard </span>
+            <div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+              <div class="relative h-full w-8 bg-white/20"></div>
+            </div>
+          </button>
+        </section>
+      </div>
+    </header>
+    <main class="flex mb-24 flex-col items-center justify-center">
+      <div class="flex text-neutral-300 flex-col mt-24 justify-start items-start min-w-96 max-w-3xl">
+        <span class="text-neutral-400 text-sm font-medium">28/08/2024</span>
+        <h1 class="text-5xl font-medium mt-8 text-white">
+          Changelog - Version 6.0
+        </h1>
+        <p class="text-neutral-400 font-medium mt-4">
+          Get more advanced and specific records in your scans.
+        </p>
+        <p class="mt-2 font-medium text-sm text-neutral-400 flex items-center justify-center">
+          Author : <span class="ml-2 text-blue-500">Ocean</span>
+          <span class="bg-blue-500/20 ml-4 text-blue-500 rounded-lg px-4">v6.0</span>
+        </p>
+        <div class="w-full my-10" style="
+            border-bottom: 1px solid;
+            border-image-source: linear-gradient(
+              90deg,
+              hsla(0, 0%, 100%, 0.025) 0,
+              hsla(0, 0%, 100%, 0.1) 40%,
+              hsla(0, 0%, 100%, 0.1) 60%,
+              hsla(0, 0%, 100%, 0.025)
+            );
+            border-image-slice: 1;
+          "></div>
+        <section class="markdown-styles text-sm">
+          <h1 id="information">Information</h1>
+          <p>
+            After a long time the Ocean scanner is upgraded again in terms of
+            features, web and performance.
+          </p>
+          <h2 id="stream-proof-detect">Stream Proof Detect</h2>
+          <p>
+            We introduce a new function that allows to detect cheats by this
+            task (Frequently used in Cheats and Bypass). This feature is
+            particularly effective against cheats that are designed to evade
+            recordings by not being visible in screen capture programs (<strong>OBS, Nvidia Recorder, etc</strong>). Ocean now has the ability to detect these hacks and bypasses
+            despite their design to hide in recording environments.
+          </p>
+          <p>
+            <img src="index_files/generic_stream.png" alt="alt">
+          </p>
+          <h2 id="analysis-of-forensic-artifacts">
+            Analysis of Forensic Artifacts
+          </h2>
+          <p>
+            Added the ability to perform detailed analysis of forensic
+            artifacts, including Master File Table (MFT), $LogFile, among
+            others, for more thorough incident investigation.
+          </p>
+          <h2 id="improved-detection-and-new-checks">
+            Improved Detection and New Checks
+          </h2>
+          <p>
+            Detection capabilities have been optimized and expanded with the
+            addition of more than 10 new types of checks that counter known
+            bypasses, improving scanning accuracy and coverage.
+          </p>
+          <h2 id="file-download-with-identifier">
+            File Download with Identifier
+          </h2>
+          <p>
+            It is now possible to download and view files with identifiers from
+            the original URL on the website, facilitating access to specific
+            data and verification of file legitimacy.
+          </p>
+          <p>
+            <img src="index_files/file_access.png" alt="alt">
+          </p>
+          <p>
+            These will be reflected in a table in the PIN results section,
+            showing the file name along with a download button and corresponding
+            link.
+          </p>
+          <h2 id="journal-speed">Journal Speed</h2>
+          <blockquote>
+            <p>
+              The USN Journal is a feature of the NTFS file system in Windows
+              that records all changes to files and directories on a partition.
+              Each time a file or directory is modified, an entry is created in
+              the USN Journal detailing the type of change, such as creation,
+              deletion, modification, or renaming.
+            </p>
+          </blockquote>
+          <p>
+            The function responsible for verifying and displaying the USN
+            Journal is now natively implemented. This update allows for greater
+            efficiency and speed in the verification process, significantly
+            improving performance when handling and analyzing USN Journal
+            records. With this optimization, scanning and displaying changes to
+            the file system is faster and more efficient, providing a more
+            streamlined and fluid experience for users.
+          </p>
+          <h2 id="event-log-detects">Event Log Detects</h2>
+          <p>
+            This Event Log Modification Detection feature in Ocean provides a
+            comprehensive analysis of system event logs to identify unauthorized
+            or suspicious changes. This feature examines Windows Event Viewer
+            logs for alterations, deletions or tampering that could indicate
+            cover-up attempts or malicious activity. By monitoring and analyzing
+            modifications to event logs, Ocean improves the ability to detect
+            and respond to security incidents, ensuring the integrity and
+            reliability of system event data. This feature is essential for
+            auditing and forensic analysis, as it helps identify and track
+            possible attempts to hide activities or make covert modifications to
+            the system.
+          </p>
+          <p><img src="index_files/event_log.png" alt=""></p>
+          <h2 id="new-website-style">New website style! 📢</h2>
+          <p><img src="index_files/landing.png" alt=""></p>
+          <blockquote>
+            <p>
+              The <a href="https://anticheat.ac/tos">ToS</a> and
+              <a href="https://anticheat.ac/privacy">Privacy</a> sites have also
+              been redesigned
+            </p>
+          </blockquote>
+          <h2 id="custom-presence">Custom Presence</h2>
+          <p>
+            The new Custom Presence feature in Ocean allows users to create
+            custom configurations to detect cheats, including those with rebuild
+            techniques. This feature allows users to define their own signatures
+            or file presences to track specific cheats, ensuring that, even if
+            they have been modified or rebuilt, they will still be detected for
+            a long period of time. This means that cheats that have been altered
+            to evade traditional detection will still be identified until
+            significant changes are made to the cheat application. Custom
+            Presence works like a traditional Ocean “file presence”, but with
+            the flexibility to be configured by users to suit specific evolving
+            cheat detection needs.
+          </p>
+          <p>
+            This feature is enabled in both <strong>Personal Free</strong> and
+            <strong>Enterprise licenses</strong>.
+          </p>
+          <h2 id="no-more-false-flags">No More False Flags</h2>
+          <p>
+            With this latest update the Ocean program will
+            <strong>no longer have false alerts</strong> in security software
+            such as VirusTotal or others.
+          </p>
+          <p><img src="index_files/virus_total.png" alt=""></p>
+          <h1 id="thanks-️">Thanks ❤️</h1>
+          <p>
+            We would like to express our sincere thanks to all our users for
+            their continued support and trust in Ocean. Every update and
+            improvement is possible thanks to your feedback and dedication. We
+            will continue to work tirelessly to provide you with the best
+            possible protection and continue to improve our service. Thank you
+            for being part of our community and for helping us to make Ocean
+            more powerful and effective every day!
+          </p>
+          <ul>
+            <li>Atte: Ocean Team</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="hidden sm:flex flex-col items-center justify-center">
+      <svg class="-mb-28" width="566" height="434" viewBox="0 0 566 434" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg1799678136_2855">
+        <g opacity="0.2">
+          <mask id="svg1799678136_2855_path-1-inside-1_395_9314" fill="white">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 0H67.1157V433.85H0.5V0ZM125.097 0H191.713V433.85H125.097V0ZM316.307 0H249.692V433.85H316.307V0ZM374.288 0H440.904V433.85H374.288V0ZM565.5 0H498.885V433.85H565.5V0Z"></path>
+          </mask>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 0H67.1157V433.85H0.5V0ZM125.097 0H191.713V433.85H125.097V0ZM316.307 0H249.692V433.85H316.307V0ZM374.288 0H440.904V433.85H374.288V0ZM565.5 0H498.885V433.85H565.5V0Z" fill="url(#svg1799678136_2855_paint0_radial_395_9314)" fill-opacity="0.28"></path>
+          <path d="M67.1157 0H68.1157V-1H67.1157V0ZM0.5 0V-1H-0.5V0H0.5ZM67.1157 433.85V434.85H68.1157V433.85H67.1157ZM0.5 433.85H-0.5V434.85H0.5V433.85ZM191.713 0H192.713V-1H191.713V0ZM125.097 0V-1H124.097V0H125.097ZM191.713 433.85V434.85H192.713V433.85H191.713ZM125.097 433.85H124.097V434.85H125.097V433.85ZM249.692 0V-1H248.692V0H249.692ZM316.307 0H317.307V-1H316.307V0ZM249.692 433.85H248.692V434.85H249.692V433.85ZM316.307 433.85V434.85H317.307V433.85H316.307ZM440.904 0H441.904V-1H440.904V0ZM374.288 0V-1H373.288V0H374.288ZM440.904 433.85V434.85H441.904V433.85H440.904ZM374.288 433.85H373.288V434.85H374.288V433.85ZM498.885 0V-1H497.885V0H498.885ZM565.5 0H566.5V-1H565.5V0ZM498.885 433.85H497.885V434.85H498.885V433.85ZM565.5 433.85V434.85H566.5V433.85H565.5ZM67.1157 -1H0.5V1H67.1157V-1ZM68.1157 433.85V0H66.1157V433.85H68.1157ZM0.5 434.85H67.1157V432.85H0.5V434.85ZM-0.5 0V433.85H1.5V0H-0.5ZM191.713 -1H125.097V1H191.713V-1ZM192.713 433.85V0H190.713V433.85H192.713ZM125.097 434.85H191.713V432.85H125.097V434.85ZM124.097 0V433.85H126.097V0H124.097ZM249.692 1H316.307V-1H249.692V1ZM250.692 433.85V0H248.692V433.85H250.692ZM316.307 432.85H249.692V434.85H316.307V432.85ZM315.307 0V433.85H317.307V0H315.307ZM440.904 -1H374.288V1H440.904V-1ZM441.904 433.85V0H439.904V433.85H441.904ZM374.288 434.85H440.904V432.85H374.288V434.85ZM373.288 0V433.85H375.288V0H373.288ZM498.885 1H565.5V-1H498.885V1ZM499.885 433.85V0H497.885V433.85H499.885ZM565.5 432.85H498.885V434.85H565.5V432.85ZM564.5 0V433.85H566.5V0H564.5Z" fill="url(#svg1799678136_2855_paint1_radial_395_9314)" fill-opacity="0.56" mask="url(#svg1799678136_2855_path-1-inside-1_395_9314)"></path>
+        </g>
+        <defs>
+          <radialGradient id="svg1799678136_2855_paint0_radial_395_9314" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(283 237.324) rotate(90) scale(196.676 296.455)">
+            <stop stop-color="#606071"></stop>
+            <stop offset="1" stop-color="#606071" stop-opacity="0.03"></stop>
+          </radialGradient>
+          <radialGradient id="svg1799678136_2855_paint1_radial_395_9314" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(283 224.885) rotate(90) scale(208.964 272.133)">
+            <stop stop-color="#606071"></stop>
+            <stop offset="1" stop-color="#606071" stop-opacity="0"></stop>
+          </radialGradient>
+        </defs>
+      </svg>
+      <style>
+        astro-island,
+        astro-slot,
+        astro-static-slot {
+          display: contents;
+        }
+      </style>
+      <script>
+        (() => {
+          var e = async (t) => {
+            await (
+              await t()
+            )();
+          };
+          (self.Astro || (self.Astro = {})).load = e;
+          window.dispatchEvent(new Event("astro:load"));
+        })();
+        (() => {
+          var A = Object.defineProperty;
+          var g = (i, o, a) =>
+            o in i
+              ? A(i, o, {
+                  enumerable: !0,
+                  configurable: !0,
+                  writable: !0,
+                  value: a,
+                })
+              : (i[o] = a);
+          var d = (i, o, a) => g(i, typeof o != "symbol" ? o + "" : o, a);
+          {
+            let i = {
+                0: (t) => m(t),
+                1: (t) => a(t),
+                2: (t) => new RegExp(t),
+                3: (t) => new Date(t),
+                4: (t) => new Map(a(t)),
+                5: (t) => new Set(a(t)),
+                6: (t) => BigInt(t),
+                7: (t) => new URL(t),
+                8: (t) => new Uint8Array(t),
+                9: (t) => new Uint16Array(t),
+                10: (t) => new Uint32Array(t),
+              },
+              o = (t) => {
+                let [l, e] = t;
+                return l in i ? i[l](e) : void 0;
+              },
+              a = (t) => t.map(o),
+              m = (t) =>
+                typeof t != "object" || t === null
+                  ? t
+                  : Object.fromEntries(
+                      Object.entries(t).map(([l, e]) => [l, o(e)])
+                    );
+            class y extends HTMLElement {
+              constructor() {
+                super(...arguments);
+                d(this, "Component");
+                d(this, "hydrator");
+                d(this, "hydrate", async () => {
+                  var b;
+                  if (!this.hydrator || !this.isConnected) return;
+                  let e =
+                    (b = this.parentElement) == null
+                      ? void 0
+                      : b.closest("astro-island[ssr]");
+                  if (e) {
+                    e.addEventListener("astro:hydrate", this.hydrate, {
+                      once: !0,
+                    });
+                    return;
+                  }
+                  let c = this.querySelectorAll("astro-slot"),
+                    n = {},
+                    h = this.querySelectorAll("template[data-astro-template]");
+                  for (let r of h) {
+                    let s = r.closest(this.tagName);
+                    s != null &&
+                      s.isSameNode(this) &&
+                      ((n[r.getAttribute("data-astro-template") || "default"] =
+                        r.innerHTML),
+                      r.remove());
+                  }
+                  for (let r of c) {
+                    let s = r.closest(this.tagName);
+                    s != null &&
+                      s.isSameNode(this) &&
+                      (n[r.getAttribute("name") || "default"] = r.innerHTML);
+                  }
+                  let p;
+                  try {
+                    p = this.hasAttribute("props")
+                      ? m(JSON.parse(this.getAttribute("props")))
+                      : {};
+                  } catch (r) {
+                    let s = this.getAttribute("component-url") || "<unknown>",
+                      v = this.getAttribute("component-export");
+                    throw (
+                      (v && (s += ` (export ${v})`),
+                      console.error(
+                        `[hydrate] Error parsing props for component ${s}`,
+                        this.getAttribute("props"),
+                        r
+                      ),
+                      r)
+                    );
+                  }
+                  let u;
+                  await this.hydrator(this)(this.Component, p, n, {
+                    client: this.getAttribute("client"),
+                  }),
+                    this.removeAttribute("ssr"),
+                    this.dispatchEvent(new CustomEvent("astro:hydrate"));
+                });
+                d(this, "unmount", () => {
+                  this.isConnected ||
+                    this.dispatchEvent(new CustomEvent("astro:unmount"));
+                });
+              }
+              disconnectedCallback() {
+                document.removeEventListener("astro:after-swap", this.unmount),
+                  document.addEventListener("astro:after-swap", this.unmount, {
+                    once: !0,
+                  });
+              }
+              connectedCallback() {
+                if (
+                  !this.hasAttribute("await-children") ||
+                  document.readyState === "interactive" ||
+                  document.readyState === "complete"
+                )
+                  this.childrenConnectedCallback();
+                else {
+                  let e = () => {
+                      document.removeEventListener("DOMContentLoaded", e),
+                        c.disconnect(),
+                        this.childrenConnectedCallback();
+                    },
+                    c = new MutationObserver(() => {
+                      var n;
+                      ((n = this.lastChild) == null ? void 0 : n.nodeType) ===
+                        Node.COMMENT_NODE &&
+                        this.lastChild.nodeValue === "astro:end" &&
+                        (this.lastChild.remove(), e());
+                    });
+                  c.observe(this, { childList: !0 }),
+                    document.addEventListener("DOMContentLoaded", e);
+                }
+              }
+              async childrenConnectedCallback() {
+                let e = this.getAttribute("before-hydration-url");
+                e && (await import(e)), this.start();
+              }
+              async start() {
+                let e = JSON.parse(this.getAttribute("opts")),
+                  c = this.getAttribute("client");
+                if (Astro[c] === void 0) {
+                  window.addEventListener(`astro:${c}`, () => this.start(), {
+                    once: !0,
+                  });
+                  return;
+                }
+                try {
+                  await Astro[c](
+                    async () => {
+                      let n = this.getAttribute("renderer-url"),
+                        [h, { default: p }] = await Promise.all([
+                          import(this.getAttribute("component-url")),
+                          n ? import(n) : () => () => {},
+                        ]),
+                        u = this.getAttribute("component-export") || "default";
+                      if (!u.includes(".")) this.Component = h[u];
+                      else {
+                        this.Component = h;
+                        for (let f of u.split("."))
+                          this.Component = this.Component[f];
+                      }
+                      return (this.hydrator = p), this.hydrate;
+                    },
+                    e,
+                    this
+                  );
+                } catch (n) {
+                  console.error(
+                    `[astro-island] Error hydrating ${this.getAttribute(
+                      "component-url"
+                    )}`,
+                    n
+                  );
+                }
+              }
+              attributeChangedCallback() {
+                this.hydrate();
+              }
+            }
+            d(y, "observedAttributes", ["props"]),
+              customElements.get("astro-island") ||
+                customElements.define("astro-island", y);
+          }
+        })();
+      </script>
+      <astro-island uid="Z1fIOLc" prefix="r0" component-url="/static/assets/js/logo.dQjPx8XF.js" component-export="default" renderer-url="/static/assets/js/client.BY2mA-CD.js" props="{&quot;server:defer&quot;:[0,true]}" client="load" opts="{&quot;name&quot;:&quot;LogoSpotlight&quot;,&quot;value&quot;:true}" await-children=""><div class="relative group "><div class="pointer-events-none absolute inset-0  opacity-0 transition duration-300" style="opacity: 0; background: radial-gradient(500px at 1px 1px, rgba(255, 255, 255, 0.09), transparent 40%); mask-image: url(&quot;/OCEAN.png&quot;); mask-repeat: no-repeat; mask-size: 100% 100%;"></div><img src="index_files/OCEAN.png" class="h-full  w-full object-contain" alt="Logo"></div></astro-island>
+      <section class="w-full -mt-9 backdrop-blur-sm bg-black/90 border-t border-neutral-950 overflow-hidden relative">
+        <div class="absolute left-1/2 top-0 z-0 h-[300px] w-[40%] -translate-x-1/2" style="
+            background: radial-gradient(
+                67.62% 100% at 50% 0%,
+                rgba(255, 255, 255, 0.05) 0%,
+                rgba(16, 170, 219, 0) 72.72%,
+                rgba(16, 36, 219, 0) 100%
+              ),
+              rgba(0, 0, 0, 0);
+            --mouse-x: 393.90625px;
+            --mouse-y: 68px;
+          "></div>
+        <div class="w-full py-24 gap-6 flex mx-auto container">
+          <div class="w-full flex flex-col ml-32">
+            <div class="flex">
+              <p class="inter text-white font-bold mr-4">(*&gt;</p>
+              <div class="flex flex-col">
+                <span class="text-sm text-white">Ocean - anticheat.ac</span>
+                <span class="text-sm font-semibold text-neutral-500">think.scan.find</span>
+              </div>
+            </div>
+            <div class="justify-end flex flex-col flex-grow">
+              <a href="https://www.dmca.com/Protection/Status.aspx?ID=29759e33-5af4-4de4-b249-6394cad77f2f" title="DMCA.com Protection Status" class="dmca-badge">
+                <img src="index_files/dmca-badge-w100-5x1-07.png" alt="DMCA.com Protection Status"></a>
+            </div>
+          </div>
+          <div class="w-full grid grid-cols-3 mr-20">
+            <div class="flex flex-col">
+              <h1 class="font-medium text-sm text-white">Product</h1>
+              <div class="mt-10 flex flex-col gap-3 relative z-4">
+                <a href="https://dl.anticheat.ac/" class="flex items-center group text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">Download<svg class="w-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ml-2 transition-all duration-300 h-3 stroke-neutral-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g></svg></a>
+                <a href="https://www.youtube.com/watch?v=xj0YPwdjZNs" class="text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">How to use</a>
+                <a href="https://www.youtube.com/watch?v=PU0Qfiq_Qnc" class="flex items-center group text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">CLI<svg class="w-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ml-2 transition-all duration-300 h-3 stroke-neutral-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g></svg></a>
+                <a href="https://docs.anticheat.ac/" class="flex items-center group text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">Docs<svg class="w-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ml-2 transition-all duration-300 h-3 stroke-neutral-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g></svg></a>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-medium text-sm text-white">Legal</h1>
+              <div class="mt-10 flex flex-col gap-3 relative z-4">
+                <a href="https://anticheat.ac/tos" class="flex group items-center text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">ToS<svg class="w-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ml-2 transition-all duration-300 h-3 stroke-neutral-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g></svg></a>
+                <a href="https://anticheat.ac/privacy" class="flex group items-center text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">Privacy<svg class="w-3 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ml-2 transition-all duration-300 h-3 stroke-neutral-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g></svg></a>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-medium text-sm text-white">Community</h1>
+              <div class="mt-10 flex flex-col gap-3 relative z-4">
+                <a href="https://discord.gg/scanner" class="flex items-center text-neutral-400 text-sm cursor-pointer group transition-all duration-300 hover:text-neutral-200">Discord</a>
+                <a href="https://www.youtube.com/@OceanAnticheat" class="text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">Youtube</a>
+                <a href="https://github.com/Ocean-SS-Tool" class="text-neutral-400 text-sm cursor-pointer transition-all duration-300 hover:text-neutral-200">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  
+
+</body></html>
