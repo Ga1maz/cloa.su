@@ -1413,7 +1413,7 @@ body {
 
 .bg-blue-500 {
     --tw-bg-opacity: 1;
-    background-color: rgb(59 130 246 / var(--tw-bg-opacity))
+    background-color: rgb(509 130 246 / var(--tw-bg-opacity))
 }
 
 .bg-blue-500\/20 {
@@ -2851,44 +2851,64 @@ astro-static-slot {
 * {
     font-family: Montserrat, sans-serif;
     scroll-behavior: smooth;
-  }
-  .markdown-styles h1 {
+}
+
+.markdown-styles h1 {
     color: rgb(245 245 245 / var(--tw-text-opacity));
     font-weight: 500;
     font-size: 1.875rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;
-  }
-  .markdown-styles h2 {
+}
+
+.markdown-styles h2 {
     color: rgb(245 245 245 / var(--tw-text-opacity));
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.75rem;
     margin-bottom: 1rem;
-  }
-  .markdown-styles blockquote p {
+}
+
+.markdown-styles blockquote p {
     color: #8a8a8a;
     font-weight: 500;
     font-size: 12px;
     padding-left: 1.5em;
     border-left: 5px solid rgba(175, 175, 175, 0.1);
     margin-bottom: 1rem;
-  }
-  .markdown-styles img {
+}
+
+.markdown-styles img {
     width: 100%;
     border-radius: 16px;
     padding: 20px;
     border: 1px solid rgb(37, 37, 37);
-  }
-  .markdown-styles p {
+}
+
+.markdown-styles p {
     margin-bottom: 2.75rem;
-  }
-  .markdown-styles a {
+}
+
+.markdown-styles a {
     color: #5479df;
-  }
-  ::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar {
     width: 0;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: transparent;
-  }
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
+}
