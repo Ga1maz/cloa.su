@@ -277,6 +277,7 @@ video {
 
 * {
     border-color: hsl(var(--border))
+    cursor: none
 }
 
 body {
@@ -2912,7 +2913,26 @@ astro-static-slot {
     width: 100px;
     height: auto;
 }
-
+abbr[title] {
+    cursor: help;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none
+}
+[role=button] {
+    cursor: pointer
+}
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer
+}
+summary {
+    cursor: pointer;
+    display: list-item
+}
 #aura,
 #cursor {
     border-radius: 100%;
